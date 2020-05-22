@@ -8,3 +8,4 @@ The webscraper takes in a CSV and outputs a new CSV. The filterAds.py function t
 The webscraper opens a headless (no visible window) version of chrome that goes to the URL of the ad creative given in the original google CSV and scrapes for the text of the ad, adding that text to the end of the CSV. The webscraper waits 0.75 seconds for the page to be loaded, and if it cannot find the XPATH of the ad it assumes that the ad has violated Google's ad terms, which makes it inaccessible. The webscraper takes about 14 hours to run on a year's worth of ads.
 
 TestCloudAd... is a version of the webscraper that runs on a virtual machine. he filteredAds.csv is a temporary CSV of ads, but it does not contain the most recent snapshot of ads.
+AnalyzeData is a function I wrote to do some basic analysis to get the number of ads in total and the number of ads that violate the ad policy.
